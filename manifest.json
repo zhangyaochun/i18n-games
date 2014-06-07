@@ -1,0 +1,42 @@
+{
+    "name": "Games",
+    "version": "1.0.8",
+    "description": "game store for i18n",
+    "icons": {
+        "16": "icon30.png",
+        "72": "icon72.png"
+    },
+    "privacy_permissions": [
+        "device",
+        "window",
+        "apps",
+        "video",
+        "account"
+    ],
+    "permissions": [
+        "file:///*/*"
+    ],
+    "app": {
+        "launch": {
+            "web_url": "wdj-extension://__MSG_@@extension_id__/index.html?type=game#game"
+        },
+        "navigation": [
+            {
+                "label": "Essential Games",
+                "web_url": "wdj-extension://__MSG_@@extension_id__/essential.html?type=game#game"
+            },
+            {
+                "label": "Top Games",
+                "web_url": "wdj-extension://__MSG_@@extension_id__/top.html?type=weeklygame#game"
+            },
+            {
+                "label": "Game Category",
+                "web_url": "wdj-extension://__MSG_@@extension_id__/tag.html?category=GAME_CASUAL#GAME"
+            },
+            {
+                "label": "Game Special",
+                "web_url": "wdj-extension://__MSG_@@extension_id__/special.html?category=GAME#GAME"
+            }
+        ]
+    }
+}
